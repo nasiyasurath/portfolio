@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👩‍💻 Unique My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1548092372-0d1bd40894a3?fit=crop&w=1920&q=80') no-repeat center center/cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      text-shadow: 0 0 10px #00f7ff;
+    }
+    .glow-border {
+      border: 2px solid #7f5af0;
+      box-shadow: 0 0 12px #7f5af0;
+    }
+    @media (min-width: 768px) {
+      .hero h1 {
+        font-size: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero text-white">
+    <h1 class="mb-4">Hey, I'm <span class="text-pink-400">Surath Nasiya</span></h1>
+    <p class="text-xl max-w-xl mx-auto">A creative, passionate <span class="text-cyan-300 font-semibold">Fullstack Developer</span> building powerful digital experiences.</p>
+    <div class="mt-10 w-full flex justify-center">
+      <a href="#projects" class="w-full max-w-xs text-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-full text-lg glow-border transition-all">✨ View My Work</a>
+    </div>
+  </section>
+
+  
+  <section id="projects" class="text-center py-20 px-6 bg-black bg-opacity-70">
+  <h2 class="text-4xl font-bold text-indigo-300 mb-6">🚀 Projects</h2>
+  <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <div class="p-6 rounded-xl bg-white bg-opacity-5 hover:scale-105 transition glow-border cursor-pointer" onclick="window.open('https://game-60035823818.development.catalystserverless.in/app/index.html ', '_blank')">
+      <h3 class="text-2xl text-cyan-300 font-bold mb-2">🃏 Flip & Find Game</h3>
+      <p class="text-gray-300">A fun browser-based card matching game built with HTML, CSS, and JavaScript that sharpens memory skills and tests your reflexes.</p>
+    </div>
+    <div class="p-6 rounded-xl bg-white bg-opacity-5 hover:scale-105 transition glow-border cursor-pointer" onclick="window.open('https://www-60035823818.development.catalystserverless.in/app/index.html ', '_blank')">
+      <h3 class="text-2xl text-cyan-300 font-bold mb-2">🌤️ Weather Forecasting App</h3>
+      <p class="text-gray-300">A responsive weather app fetching real-time data with JavaScript API calls to keep users updated on current and future weather conditions.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="contact" class="py-20 text-center bg-gradient-to-t from-black via-indigo-900 to-black">
+  <h2 class="text-3xl font-bold text-indigo-200 mb-4">📫 Contact Me</h2>
+  <p class="text-gray-400 text-lg"> Email: surathnasiya22@gmail.com</p>
+    <p class="text-gray-400 text-lg">Phone: +91 70949 37312</p>
+</section>
+
+  <footer class="text-center py-6 text-gray-500 text-sm bg-black">
+    Designed & Coded with 💜 by <span class="text-white">Surath Nasiya</span> — 2025
+  </footer>
+</body>
+</html>
